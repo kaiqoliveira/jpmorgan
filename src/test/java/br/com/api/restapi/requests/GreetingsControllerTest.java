@@ -1,4 +1,4 @@
-package br.com.tomanocu.br.com.fodase.requests;
+package br.com.api.restapi.requests;
 
 import com.hackerrank.test.utility.Order;
 import com.hackerrank.test.utility.OrderedTestRunner;
