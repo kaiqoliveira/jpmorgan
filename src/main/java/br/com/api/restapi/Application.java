@@ -1,5 +1,8 @@
 package br.com.api.restapi;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 
@@ -22,10 +25,12 @@ import br.com.api.restapi.services.FetchDataService;
 public class Application {
 	
     @Autowired
-    FetchDataService service ;
+    FetchDataService service;
 
     public static void main(String[] args)  {
         SpringApplication.run(Application.class, args);
+
+ 
         
     }
 }

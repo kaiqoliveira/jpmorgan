@@ -1,6 +1,7 @@
 package br.com.api.restapi.model.dto;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 public class ReturnJson implements Serializable{
 	/**
@@ -10,7 +11,7 @@ public class ReturnJson implements Serializable{
 	
 	
 	private String tradercode;
-	private double total;
+	private BigDecimal total;
 
 	public String getTradercode() {
 		return tradercode;
@@ -18,10 +19,10 @@ public class ReturnJson implements Serializable{
 	public void setTradercode(String tradercode) {
 		this.tradercode = tradercode;
 	}
-	public double getTotal() {
+	public BigDecimal getTotal() {
 		return total;
 	}
-	public void setTotal(double total) {
+	public void setTotal(BigDecimal total) {
 		this.total = total;
 	}
 	

@@ -1,7 +1,6 @@
 package br.com.api.restapi.model;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
@@ -11,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -35,7 +33,7 @@ public class Trade implements Serializable{
 	
 	
 	@Column(name="price")
-	private double price;
+	private Double price;
 	
 	////Ou OneToOne??
 	@ManyToOne
@@ -74,15 +72,15 @@ public class Trade implements Serializable{
 		this.quantity = quantity;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setPrice(Double price) {
+		this.price = Double.valueOf(price);
 	}
 
-	public Trade(LocalDate timeStamp, int quantity, double price) {
+	public Trade(LocalDate timeStamp, int quantity, Double price) {
 	
 		this.timeStamp = timeStamp;
 		this.quantity = quantity;
